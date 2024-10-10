@@ -9,12 +9,12 @@ int main()
    kar_zarar = satis_bedeli - maliyet;
    if(kar_zarar > 0){
         toplam_kar_orani = (maliyet*-100/satis_bedeli)+100;
-        printf("toplam kariniz %.2f oraninda ve %.1f TL tutarindadir",toplam_kar_orani, kar_zarar);
+        printf("toplam kariniz %.2f oraninda ve %.1f TL tutarindadir.",toplam_kar_orani, kar_zarar);
    }else if(kar_zarar == 0){
-        printf("kar veya zarar etmediniz");
+        printf("kar veya zarar etmediniz.");
    }else{
         toplam_zarar_orani = (satis_bedeli*-100/maliyet)+100;
-        printf("toplam zarariniz %.2f oraninda ve %.1f TL tutarindadir",toplam_zarar_orani, -kar_zarar);
+        printf("toplam zarariniz %.2f oraninda ve %.1f TL tutarindadir.",toplam_zarar_orani, -kar_zarar);
    }
 return 0;
 }
